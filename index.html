@@ -3,13 +3,35 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2family=Lato:wght@300&display=swap" rel="stylesheet">
+
     <link rel="icon" href="icon.svg">
     <style>
     body {
       background-color: white;
     }
+	.shadow
+	{
+	    display:block;
+	    position:relative;
+	}
 
+	img {
+	    width: 80%;
+	    height: 80%;
+	}
+
+	.shadow:before
+	{
+	    display:block;
+	    content:'';
+	    position:absolute;
+	    width:100%;
+	    height:100%;
+	    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+	    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+	    box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+	}
     .center {
       position: absolute;
         top: 50%;
@@ -19,16 +41,22 @@
         transform: translateX(-50%) translateY(-50%);
     }
     .text {
-        font-family: 'Figtree', sans-serif;
-        color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
     }
     </style>
 </head>
 
 <body>
 <center class="center">
+	
     <div>
-        <a href="https://bit.ly/elena_memorial_rsvp" target="_blank" class="text">RSVP</a><br/><br/>
+        <div class="shadow">
+            <img src="elena.jpg" />
+    </div>
+    <br/><br/>
+        <a href="https://bit.ly/elena_memorial_rsvp" target="_blank" class="text">Sunshine Coast: RSVP</a><br/><br/>
         <a href="https://bit.ly/elena_seaford_memorial" target="_blank" class="text">Seaford Memorial Video</a><br/><br/>
          <a href="https://bit.ly/elena_memorial_speeches" target="_blank" class="text">Speeches</a><br/><br/>
     </div>
